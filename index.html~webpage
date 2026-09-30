@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Closer to God</title>
+  <style>
+    body { font-family: Georgia, serif; background: #f8f4ec; color: #2b2b2b;
+           max-width: 650px; margin: 0 auto; padding: 20px; text-align: center; }
+    h1 { color: #5b2a86; }
+    .card { background: white; border-radius: 12px; padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 24px 0; }
+    .ref { color: #777; font-size: 0.9em; }
+    button { background: #5b2a86; color: white; border: none; border-radius: 8px;
+             padding: 12px 20px; font-size: 1em; cursor: pointer; }
+    button:hover { background: #7a3fb0; }
+    a { color: #5b2a86; }
+  </style>
+</head>
+<body>
+  <h1>✝ Closer to God</h1>
+  <p>A short reflection to start your day.</p>
+
+  <div class="card">
+    <p id="text"></p>
+    <p class="ref" id="ref"></p>
+  </div>
+
+  <button onclick="showReflection()">New reflection</button>
+
+  <p style="margin-top:40px">
+    Read more: <a href="https://bible.usccb.org/daily-bible-reading" target="_blank">Daily readings (USCCB)</a> |
+    <a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM" target="_blank">Catechism (Vatican)</a>
+  </p>
+
+  <script>
+    const reflections = [
+      { text: "Every person has a natural desire for God, placed in the human heart by the Creator.", ref: "CCC 27" },
+      { text: "Prayer is how we lift our minds and hearts to God, and it is something we can do at any time.", ref: "CCC 2558-2565" },
+      { text: "The Church teaches that we are invited to pray without ceasing, turning our everyday moments into prayer.", ref: "CCC 2742-2745" },
+      { text: "The Eucharist is the center of Catholic life, the source and high point of everything the Church does.", ref: "CCC 1324" }
+    ];
+
+    function showReflection() {
+      const r = reflections[Math.floor(Math.random() * reflections.length)];
+      document.getElementById("text").textContent = r.text;
+      document.getElementById("ref").textContent = r.ref;
+    }
+    showReflection();
+  </script>
+</body>
+</html>
