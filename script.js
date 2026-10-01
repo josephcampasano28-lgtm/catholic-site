@@ -71,11 +71,10 @@ if (listEl) {
 const pages = [
   { title: "Prayer", url: "prayer.html", keywords: "prayer pray our father hail mary glory be sign of the cross habit meditation contemplative" },
   { title: "The Sacraments", url: "sacraments.html", keywords: "sacraments baptism confirmation eucharist confession penance reconciliation anointing sick holy orders matrimony marriage" },
-  { title: "The Mass", url: "mass.html", keywords: "mass liturgy word eucharist communion readings homily sunday" }
-];  { title: "The Mass", url: "mass.html", keywords: "mass liturgy word eucharist communion readings homily sunday" },
-  { title: "Commandments and Beatitudes", url: "commandments.html", keywords: "commandments ten beatitudes law sin examination conscience mercy peace meek" }
+  { title: "The Mass", url: "mass.html", keywords: "mass liturgy word eucharist communion readings homily sunday" },
   { title: "Commandments and Beatitudes", url: "commandments.html", keywords: "commandments ten beatitudes law sin examination conscience mercy peace meek" },
   { title: "Confession Guide", url: "confession.html", keywords: "confession reconciliation penance forgiveness sin absolution contrition priest child teen adult examination conscience" }
+];
 const searchBox = document.getElementById("search-box");
 const results = document.getElementById("search-results");
 if (searchBox && results) {
